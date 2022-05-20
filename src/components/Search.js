@@ -1,5 +1,5 @@
 import React from 'react'
-//change to a filter??
+
 const Search = ({searchTerm, onHandleSearch}) => {
   //const [searchTerm, setSearchTerm] = useState("")
     const handleSearch = (e) => {
@@ -8,7 +8,7 @@ const Search = ({searchTerm, onHandleSearch}) => {
 
     return (
         <div>
-        <input type="text" id="search" onChange={handleSearch} value={searchTerm} />
+        <input type="text" id="search" placeholder="Searchy by island..." onChange={handleSearch} value={searchTerm} />
         </div>
     )
 }
