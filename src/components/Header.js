@@ -2,9 +2,10 @@ import Search from "./Search"
 import Form from './Form'
 
 const Header = () => {
+
     return (
-        <div>
-            <p>Header Logo</p>
+        <div id="image-header">        
+            <img src="https://www.gohawaii.com/sites/all/themes/gohawaii/logo.png" alt ="header" />         
             <Search />
             <Form />
         </div>

@@ -1,7 +1,13 @@
-const Search = () => {
+import React from 'react'
+
+const Search = ({searchTerm, onSetSearchTerm}) => {
+    const handleSearch = (e) => {
+        onSetSearchTerm(e.target.value)
+    }
+
     return (
         <div>
-            I'm from Search
+        <input type="text" id="search" placeholder="Search by island" onChange={handleSearch} value={searchTerm} />
         </div>
     )
 }
