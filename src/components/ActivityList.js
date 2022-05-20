@@ -8,9 +8,9 @@ const ActivityList = ({activities}) => {
      ))
 
     return (
-        <div>
+        <ul id="cards">
         {activityArray}
-        </div>
+        </ul>
     )
 }
 

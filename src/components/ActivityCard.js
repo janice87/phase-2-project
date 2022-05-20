@@ -1,19 +1,17 @@
-import styled from 'styled-components'
-
 const ActivityCard = ({activity}) => {
    const {name, image, address, island} = activity
-    const Div = styled.div`
-    
-    `
 
     return (
-        <Div>
+        <li className="card">
+            <div className="image">
             <img src={image} alt={name} />
-            <p>{name}</p>
+            <h4>{name}</h4>
             <p>{address}</p>
             <p>{island}</p>
             <button>MORE</button>
-        </Div>
+            <button>DELETE</button>
+            </div>
+        </li>
     )
 }
 
