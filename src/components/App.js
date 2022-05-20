@@ -7,14 +7,14 @@ import Form from './Form'
 import ActivityCard from './ActivityCard'
 //import ActivityList from './ActivityList';
 
-function App() {
-
+const App = () => {
+        
   return (
     <div>     
       <NavBar />      
       <Switch>
-        <Route path="/activities/:id"><ActivityCard /></Route>
         <Route path="/activities/new"><Form /></Route>    
+        <Route path="/activities/:id"><ActivityCard /></Route>
         <Route path="/activities"><PageContainer /></Route>      
         <Route exact path="/"><Home /></Route>
       </Switch>
