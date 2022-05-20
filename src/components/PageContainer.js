@@ -18,11 +18,16 @@ const handleSearchQuery = (searchQuery) => {
 
 const searchedActivities = activities.filter(activity => 
     activity.name.toLowerCase().includes(searchTerm.toLowerCase()))
+
+const handleDeleteCard = (id) => {
+    const updatedActivities = activities.filter(act => act.id !== id)
+    setSearchTerm(updatedActivities)
+}    
     
     return (
       <div>
         <Search searchTerm={searchTerm} onHandleSearch={handleSearchQuery} />
-        <ActivityList activities={searchedActivities} />
+        <ActivityList activities={searchedActivities} onHandleDeleteCard={handleDeleteCard} />
       </div>
 
     )   
