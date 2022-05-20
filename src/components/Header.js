@@ -1,4 +1,4 @@
-import Search from "./Search"
+//import Search from "./Search"
 import Form from './Form'
 
 const Header = () => {
@@ -6,7 +6,6 @@ const Header = () => {
     return (
         <div id="image-header">        
             <img src="https://www.gohawaii.com/sites/all/themes/gohawaii/logo.png" alt ="header" />         
-            <Search />
             <Form />
         </div>
     )

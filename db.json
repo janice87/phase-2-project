@@ -15,6 +15,7 @@
       "image": "https://mauiinn.com/wp-content/uploads/2016/05/Haleakala-National-Park-1500x609.jpg",
       "type": "park",
       "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "island": "Big Island",     
       "description": "This special place vibrates with stories of ancient and modern Hawaiian culture and protects the bond between the land and its people. The park also cares for endangered species, some of which exist nowhere else. Come visit this special place - renew your spirit amid stark volcanic landscapes and sub-tropical rain forest with an unforgettable hike through the backcountry."
     },
     {
@@ -23,6 +24,7 @@
       "image": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
       "type": "park",
       "address": "1 Crater Rim Drive Hawaii National Park, HI 96718",
+      "island": "Big Island",     
       "description": "Hawai‘i Volcanoes National Park protects some of the most unique geological, biological, and cherished cultural landscapes in the world. Extending from sea level to 13,681 feet, the park encompasses the summits of two of the world's most active volcanoes - Kīlauea and Mauna Loa - and is a designated International Biosphere Reserve and UNESCO World Heritage Site."
     },
     {
@@ -31,6 +33,7 @@
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
       "type": "park",
       "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "island": "Big Island",     
       "description": ""
     },
     {
@@ -39,6 +42,7 @@
       "image": "http://4.bp.blogspot.com/_OZHbJ8c71OM/Sog43CMFX2I/AAAAAAAADEs/0AKX0XslD4g/s400/bo.png",
       "type": "park",
       "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "island": "Big Island",     
       "description": ""
     },
     {
@@ -47,6 +51,7 @@
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
       "type": "park",
       "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "island": "Big Island",     
       "description": ""
     },
     {
@@ -55,6 +60,7 @@
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "type": "park",
       "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "island": "Big Island",     
       "description": ""
     }
   ]

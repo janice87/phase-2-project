@@ -1,13 +1,14 @@
 import React from 'react'
-
-const Search = ({searchTerm, onSetSearchTerm}) => {
+//change to a filter??
+const Search = ({searchTerm, onHandleSearch}) => {
+  //const [searchTerm, setSearchTerm] = useState("")
     const handleSearch = (e) => {
-        onSetSearchTerm(e.target.value)
+        onHandleSearch(e.target.value)
     }
 
     return (
         <div>
-        <input type="text" id="search" placeholder="Search by island" onChange={handleSearch} value={searchTerm} />
+        <input type="text" id="search" onChange={handleSearch} value={searchTerm} />
         </div>
     )
 }
