@@ -5,6 +5,7 @@ import Home from './Home'
 import PageContainer from './PageContainer';
 import Form from './Form'
 import ActivityCard from './ActivityCard'
+//import ActivityList from './ActivityList';
 
 function App() {
 

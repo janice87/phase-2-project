@@ -1,18 +1,11 @@
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-// import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-//import styled from 'styled-components'
-// import { styled, alpha } from '@mui/material/styles';
-// import InputBase from '@mui/material/InputBase';
 
-// const StyledLink = styled(Link)` 
-//   color: red; 
-// `
 
 const NavBar = () => {
 
@@ -21,23 +14,14 @@ const NavBar = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} >
-            <Button variant="text" size="medium" sx={{ my: 2, color: 'white', display: 'block' }}>
-            <NavLink exact to="/">
-              HOME
-            </NavLink>
-            <NavLink exact to="/activities">
-              ACTIVITIES
-            </NavLink>
-            <NavLink exact to="/activities/new">
-              ADD ACTIVITY
-            </NavLink>   
-            </Button>      
+            <Button color="inherit" to="/" component={Link}>HOME</Button>
+            <Button color="inherit" to="/activities" component={Link}>ACTIVITIES</Button>
+            <Button color="inherit" to="/activities/new" component={Link}>ADD ACTIVITY</Button>               
           </Box>    
        </Toolbar>
       </Container>
     </AppBar>
-  );
-  
+  );  
 }
 
 export default NavBar

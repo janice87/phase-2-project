@@ -1,14 +1,15 @@
 const ActivityCard = ({activity}) => {
-    const {name, image, address, island} = activity
-    
+   const {name, image, address, island} = activity
+
+
     return (
-        <li>
+        <div>
             <img src={image} alt={name} />
             <p>{name}</p>
             <p>{address}</p>
             <p>{island}</p>
             <button>MORE</button>
-        </li>
+        </div>
     )
 }
 

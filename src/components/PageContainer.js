@@ -4,17 +4,18 @@ import Search from './Search'
 import ActivityList from './ActivityList'
 
 const PageContainer = () => {
-const [activities, setActivities] = useState("")
+const [activities, setActivities] = useState("test")
 
 useEffect (() => {
         fetch('http://localhost:4000/all')
         .then(res => res.json())
-       //.then(data => setActivities(data))
-        .then(data => console.log(data))
+        .then(data => setActivities(data))
+       //.then(data => console.log(data))
       }, [])
     
     return (
       <div>
+          IM page container
         <Form />
         <Search />
         <ActivityList activities={activities} />
