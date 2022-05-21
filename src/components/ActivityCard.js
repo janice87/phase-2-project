@@ -16,7 +16,7 @@ const ActivityCard = ({activity, onHandleDeleteCard}) => {
     }
 
     const handleShowCard = () => {
-        history.push(`${id}`)
+        history.push(`/activities/${id}`)
     }
 
     return (
@@ -27,7 +27,6 @@ const ActivityCard = ({activity, onHandleDeleteCard}) => {
             <p>{address}</p>
             <p>{island}</p>
            <Button variant="outlined" onClick={handleShowCard}>MORE</Button>
-           {/* <Link to={`/${id}`}>MORE</Link> */}
            <Button variant="outlined" onClick={handleDelete}>DELETE</Button> 
            </div>
         </li>
