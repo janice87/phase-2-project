@@ -10,10 +10,9 @@ const ActivityCard = ({activity, onHandleDeleteCard}) => {
     fetch(`http://localhost:4000/all/${id}`, {
         method: 'DELETE'
     })
-     //.then(res => res.json())
-     //.then((data) => console.log(data))  
-     //.then(() => onHandleDeleteCard(id))  
-    onHandleDeleteCard(id)  
+     .then(res => res.json())
+     .then(() => onHandleDeleteCard(id))  
+    //onHandleDeleteCard(id)  
     }
 
     const handleShowCard = () => {
