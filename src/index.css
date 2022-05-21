@@ -67,3 +67,26 @@ body {
 input { 
   width: 100%;  
 }
+
+.home {
+  background-image: url("https://www.whatspaper.com/wp-content/uploads/2021/09/hd-hawaii-wallpaper-whatspaper-1.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.home h1 {
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}
+
+.home h3 {
+  font-family: 'Koulen', cursive;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+}

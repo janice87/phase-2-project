@@ -3,7 +3,6 @@ import Search from './Search'
 import ActivityList from './ActivityList'
 import Form from './Form'
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 const PageContainer = () => {
@@ -25,8 +24,9 @@ const searchedActivities = activities.filter(activity =>
     activity.name.toLowerCase().includes(searchTerm.toLowerCase()))
 
 const handleDeleteCard = (id) => {
-    const updatedActivities = activities.filter(act => act.id !== id)
-    setActivities(updatedActivities)
+    console.log(id)
+    // const updatedActivities = activities.filter(act => act.id !== id)
+    // setActivities(updatedActivities)
 }    
 
 const handleAddActivity = (newActivity) => {
@@ -37,13 +37,11 @@ const handleAddActivity = (newActivity) => {
     return (
       <div>
         <CssBaseline />
-          <Container maxWidth="xl">
-        
+          <Container maxWidth="xl">        
             { display ? (<Form onHandleAddActivity={handleAddActivity} />) : null }
             <Search searchTerm={searchTerm} onHandleSearch={handleSearchQuery} />
             <ActivityList activities={searchedActivities} onHandleDeleteCard={handleDeleteCard} />
-
-      </Container>
+         </Container>
       </div>
 
     )   
