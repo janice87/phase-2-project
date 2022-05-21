@@ -7,9 +7,9 @@ const Search = ({searchTerm, onHandleSearch}) => {
     }
 
     return (
-        <div>
-            <label htmlFor="search">Search ...</label>
-        <input type="text" id="search" placeholder="Search by island..." onChange={handleSearch} value={searchTerm} />
+        <div className="searchbar">
+            {/* <label htmlFor="search">Search ...</label> */}
+        <input type="text" id="search" placeholder="Search by name..." onChange={handleSearch} value={searchTerm} />
         </div>
     )
 }
