@@ -24,7 +24,7 @@ const ActivityCard = ({activity, onHandleDeleteCard}) => {
             <div className="image">
             <img src={image} alt={name} />
             <h4>{name}</h4>
-            <p>{address}</p>
+            <p>📍{address}</p>
             <p>{island}</p>
            <Button variant="outlined" onClick={handleShowCard}>MORE</Button>
            <Button variant="outlined" onClick={handleDelete}>DELETE</Button> 

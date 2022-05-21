@@ -30,7 +30,7 @@ body {
 
 .card .image img {
   max-width: 250px;
-  max-height: 200px;
+  max-height: 300px;
   width: auto;
   height: auto;
 }
@@ -98,4 +98,20 @@ input {
   color: white;
   text-align: center;
   font-size: 80px;
+}
+
+.activity-detail {
+  border: 1px solid #ccc;
+  width: 900px;
+  height: 1000px;
+  justify-content: center;
+  padding: 30px;
+  margin: 15px;
+}
+
+.activity-detail .image img {
+  max-width: 800px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
 }
