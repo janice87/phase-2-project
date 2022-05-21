@@ -3,8 +3,8 @@ import Button from '@mui/material/Button';
 
 const ActivityCard = ({activity, onHandleDeleteCard}) => {
    const {name, image, address, island, id} = activity
-  // const {id} = useParams() 
-   const history = useHistory();
+ 
+    const history = useHistory();
 
    const handleDelete = () => {
     fetch(`http://localhost:4000/all/${id}`, {
@@ -27,7 +27,8 @@ const ActivityCard = ({activity, onHandleDeleteCard}) => {
             <p>{address}</p>
             <p>{island}</p>
            <Button variant="outlined" onClick={handleShowCard}>MORE</Button>
-           <Button variant="outlined" onClick={handleDelete}>DELETE</Button>
+           {/* <Link to={`/${id}`}>MORE</Link> */}
+           <Button variant="outlined" onClick={handleDelete}>DELETE</Button> 
            </div>
         </li>
     )
