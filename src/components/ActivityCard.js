@@ -1,9 +1,9 @@
-import {useParams, useHistory} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import Button from '@mui/material/Button';
 
 const ActivityCard = ({activity, onHandleDeleteCard}) => {
-   const {name, image, address, island} = activity
-   const {id} = useParams() 
+   const {name, image, address, island, id} = activity
+  // const {id} = useParams() 
    const history = useHistory();
 
    const handleDelete = () => {
