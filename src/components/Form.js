@@ -38,7 +38,7 @@ const Form = ({ onHandleAddActivity}) => {
   }
 
     return (
-        <div>
+        <div classname="form-image">
         <CssBaseline />
           <Container maxWidth="xs">           
           <h3>Don't see an activity listed? Add it below</h3>

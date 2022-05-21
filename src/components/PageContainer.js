@@ -24,9 +24,9 @@ const searchedActivities = activities.filter(activity =>
     activity.name.toLowerCase().includes(searchTerm.toLowerCase()))
 
 const handleDeleteCard = (id) => {
-    console.log(id)
-    // const updatedActivities = activities.filter(act => act.id !== id)
-    // setActivities(updatedActivities)
+   // console.log(id)
+    const updatedActivities = activities.filter(act => act.id !== id)
+    setActivities(updatedActivities)
 }    
 
 const handleAddActivity = (newActivity) => {
