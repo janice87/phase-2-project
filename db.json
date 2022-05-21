@@ -15,7 +15,7 @@
       "image": "https://mauiinn.com/wp-content/uploads/2016/05/Haleakala-National-Park-1500x609.jpg",
       "type": "park",
       "address": "Haleakalā National Park Route 378 Kula, HI 96790",
-      "island": "Big Island",
+      "island": "Maui",
       "description": "This special place vibrates with stories of ancient and modern Hawaiian culture and protects the bond between the land and its people. The park also cares for endangered species, some of which exist nowhere else. Come visit this special place - renew your spirit amid stark volcanic landscapes and sub-tropical rain forest with an unforgettable hike through the backcountry."
     },
     {
@@ -29,39 +29,55 @@
     },
     {
       "id": 4,
-      "name": "Slinky Dog",
-      "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "type": "park",
-      "address": "Haleakalā National Park Route 378 Kula, HI 96790",
-      "island": "Big Island",
-      "description": ""
+      "name": "Diamond Head State Monument",
+      "image": "https://camping.ehawaii.gov/camping/resources/spc,resource,57855,p,2,null,DHview.jpg",
+      "address": "Diamond Head Rd Honolulu, HI 96815",
+      "island": "Oahu",
+      "description": "The unique profile of Diamond Head (Lē‘ahi) sits prominently near the eastern edge of Waikiki’s coastline. Hawaii’s most recognized landmark is known for its historic hiking trail, stunning coastal views, and military history. Diamond Head State Monument encompasses over 475 acres, including the interior and outer slopes of the crater."
+    },
+    {
+      "id": 5,
+      "name": "Kalaupapa National Historical Park",
+      "image": "https://www.nps.gov/common/uploads/structured_data/3C79B6CD-1DD8-B71B-0BB2B4265DD8C023.jpg",
+      "address": "189 Kaiulani St, Kalaupapa, HI 96742",
+      "island": "Moloka‘i",
+      "description": "When Hansen's disease (leprosy) was introduced to the Hawaiian Islands, King Kamehameha V banished all afflicted to the isolated Kalaupapa peninsula on the north shore of Molokai. Since 1866, more than 8000 people, mostly Hawaiians, have died at Kalaupapa. Once a prison, Kalaupapa is now refuge for the few remaining residents who are now cured, but were forced to live their lives in isolation"
     },
     {
       "id": 6,
-      "name": "Bo Peep",
-      "image": "http://4.bp.blogspot.com/_OZHbJ8c71OM/Sog43CMFX2I/AAAAAAAADEs/0AKX0XslD4g/s400/bo.png",
+      "name": "Kaloko-Honokōhau National Historical Park",
+      "image": "https://www.nps.gov/common/uploads/structured_data/3C821C0B-1DD8-B71B-0B75B0451911CCAA.jpg",
       "type": "park",
-      "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "address": "73-4786 Kanalani St. Ste 14 Kailua Kona, HI 96740",
       "island": "Big Island",
-      "description": ""
+      "description": "To survive in a hot and arid environment the native Hawaiians (kanaka maoli) used ancient fishing skills, including the building of fishponds, and the knowledge of the location of precious fresh water (wai) that flows into the many brackish pools throughout the park. The spirit of the people (poe) and the knowledge of the elders (kupuna) created a tradition of respect and reverence for this area."
     },
     {
       "id": 7,
-      "name": "Hamm",
-      "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
+      "name": "Pearl Harbor",
+      "image": "https://www.nps.gov/common/uploads/structured_data/3C79B3C1-1DD8-B71B-0BBE30E8BE9E1683.jpg",
       "type": "park",
-      "address": "Haleakalā National Park Route 378 Kula, HI 96790",
-      "island": "Big Island",
-      "description": ""
+      "address": "1 Arizona Memorial Pl, Honolulu, HI 96818",
+      "island": "Oahu",
+      "description": "Tickets for the USS Arizona Memorial program are free. However, there are a limited number of timed tickets. The same day, first come first served ticket distribution program has been discontinued. \n\nTickets can be reserved via www.recreation.gov up to 7 days in advance. Reservations via recreation.gov are strongly recommended as standby seats may not be available (especially during times of peak visitation: Thanksgiving, Winter, Spring & Summer Breaks)."
     },
     {
       "id": 8,
-      "name": "Little Green Men",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
+      "name": "Puʻuhonua o Hōnaunau National Historical Park",
+      "image": "https://www.nps.gov/common/uploads/structured_data/9794DBEA-C86C-03F5-51F3177CA76DCCCE.jpg",
       "type": "park",
-      "address": "Haleakalā National Park Route 378 Kula, HI 96790",
+      "address": "HState Hwy 160, Hōnaunau, HI 96726",
       "island": "Big Island",
-      "description": ""
+      "description": "Imagine you had just broken the sacred laws, the kapu, and the only punishment was death. Your only chance of survival is to elude your pursuers and reach the Puʻuhonua, a place of refuge. The Puʻuhonua protected the kapu breaker, defeated warriors, as well as civilians during the time of battle. No physical harm could come to those who reached the boundaries of the Puʻuhonua."
+    },
+    {
+      "id": 9,
+      "name": "Puʻukoholā Heiau National Historic Site",
+      "image": "https://www.nps.gov/common/uploads/structured_data/CF9F184A-A873-98A1-95D55AE153E94BA3.jpg",
+      "type": "park",
+      "address": "62-3601 Kawaihae Rd, Waimea, HI 96743",
+      "island": "Big Island",
+      "description": "How many places in America can you walk in the footsteps of a king? Where else has a stranded sailor risen up to become a great chief over an entire island? Where else can you experience the culminating event of a people, foretold from centuries past? Where else can you stand on a beach and watch as sharks pass over a submerged temple? Experience all this and much more – only at Pu'ukoholā Heiau!"
     }
   ]
 }
