@@ -24,17 +24,21 @@ const ActivityDetail = () => {
 
     return (
     <div className='activity-detail'>
-        <CssBaseline />
-          <Box m="auto">   
-            <h3>{name}</h3>
+        {/* <CssBaseline /> */}
+          {/* <Box display="flex" 
+        width={900} height={800} 
+        alignItems="center"
+        justifyContent="center">    */}
+            
             <div className="image">
             <img src={image} alt={name} />
+            <h2>{name}</h2>
             <p>📍{address}</p>
             <p>{island}</p>
             <p>{description}</p>   
             <Button variant="outlined" onClick={handleHomePage}>BACK</Button>         
             </div>
-         </Box>        
+         {/* </Box>         */}
     </div>
     )
 }
