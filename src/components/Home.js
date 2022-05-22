@@ -1,6 +1,5 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
-// import { Typography } from '@mui/material';
 
 const Home = () => {
     return (
@@ -17,7 +16,3 @@ const Home = () => {
 }
 
 export default Home
-
-{/* <Typography variant="h2" align='center'>
-Aloha
-</Typography> */}
