@@ -15,7 +15,8 @@ const NavBar = () => {
         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} >
             <Button color="inherit" to="/" component={Link}>HOME</Button>
             <Button color="inherit" to="/activities" component={Link}>ACTIVITIES</Button>
-            <Button color="inherit" to="/activities/new" component={Link}>ADD ACTIVITY</Button>               
+            <Button color="inherit" to="/activities/new" component={Link}>ADD ACTIVITY</Button>
+            <Button color="inherit" to="/mytrip" component={Link}>MY TRIP</Button>                 
           </Box>    
        </Toolbar>
       </Container>
