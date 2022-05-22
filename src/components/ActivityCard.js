@@ -1,7 +1,7 @@
 import {useHistory} from 'react-router-dom'
 import Button from '@mui/material/Button';
 
-const ActivityCard = ({activity, onHandleDeleteCard}) => {
+const ActivityCard = ({activity, onHandleDeleteCard, onAddToTrip}) => {
    const {name, image, address, island, id} = activity
  
     const history = useHistory();
@@ -28,6 +28,7 @@ const ActivityCard = ({activity, onHandleDeleteCard}) => {
             <p>{island}</p>
            <Button variant="outlined" onClick={handleShowCard}>MORE</Button>
            <Button variant="outlined" onClick={handleDelete}>DELETE</Button> 
+           <Button variant="outlined" onClick={() => onAddToTrip(activity)}>ADD TRIP</Button> 
            </div>
         </li>
     )
