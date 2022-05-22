@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import {useParams} from 'react-router-dom'
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import {useHistory} from 'react-router-dom'
 
@@ -24,12 +22,7 @@ const ActivityDetail = () => {
 
     return (
     <div className='activity-detail'>
-        {/* <CssBaseline /> */}
-          {/* <Box display="flex" 
-        width={900} height={800} 
-        alignItems="center"
-        justifyContent="center">    */}
-            
+                  
             <div className="image">
             <img src={image} alt={name} />
             <h2>{name}</h2>
@@ -38,7 +31,7 @@ const ActivityDetail = () => {
             <p>{description}</p>   
             <Button variant="outlined" onClick={handleHomePage}>BACK</Button>         
             </div>
-         {/* </Box>         */}
+        
     </div>
     )
 }
