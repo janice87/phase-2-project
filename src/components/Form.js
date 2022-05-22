@@ -6,12 +6,13 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
 const Form = ({ onHandleAddActivity}) => {
-  const [name, setName] = useState("")
-  const [image, setImage] = useState("")
-  const [type, setType] = useState("")
-  const [address, setAddress] = useState("")
-  const [island, setIsland] = useState("")
-  const [description, setDescription] = useState("")
+const [formData, setFormData] = useState({
+    name: "", 
+    image: "",
+    address: "", 
+    island: "",
+    description: ""
+})
 
   const history = useHistory();
 
@@ -23,43 +24,40 @@ const Form = ({ onHandleAddActivity}) => {
             'Content-Type': 'application/json',
             Accept: 'application/json'
         },
-        body: JSON.stringify({
-            name, 
-            image,
-            type,
-            address,
-            island,
-            description
-        })
+        body: JSON.stringify(formData)
     })
     .then(res => res.json())
     .then(data =>  onHandleAddActivity(data))
     history.push("/activities")
   }
 
+  const handleChange = (e) => {
+    setFormData({
+        ...formData,
+      [e.target.name]: e.target.value
+    })      
+  }
+
     return (
         <div className="form-image">
         <CssBaseline />
           <Container maxWidth="xs">           
-          <h3>Don't see an activity listed? Add it below</h3>
            <form onSubmit={handleSubmit} className="form">
-               <label htmlFor="name" className="form-label">Name</label>
-               <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)}></input>
+            <h3>Don't see an activity? Add it below!</h3>
+               <label htmlFor="name" className="form-label">Name:</label>
+               <input type="text" name="name" value={formData.name} onChange={handleChange}></input>
              
                <label htmlFor="image" className="form-label">Image URL:</label>
-               <input type="text" name="image" value={image} onChange={(e) => setImage(e.target.value)}></input>
-              
-               <label htmlFor="type" className="form-label">Type</label>
-               <input type="text" name="type" value={type} onChange={(e) => setType(e.target.value)}></input>
-               
-               <label htmlFor="address" className="form-label">Address</label>
-               <input type="text" name="address" value={address} onChange={(e) => setAddress(e.target.value)}></input>
+               <input type="text" name="image" value={formData.image} onChange={handleChange}></input>
+                             
+               <label htmlFor="address" className="form-label">Address:</label>
+               <input type="text" name="address" value={formData.address} onChange={handleChange}></input>
              
-               <label htmlFor="island" className="form-label">Island</label>
-               <input type="text" name="island" value={island} onChange={(e) => setIsland(e.target.value)}></input>
+               <label htmlFor="island" className="form-label">Island:</label>
+               <input type="text" name="island" value={formData.island} onChange={handleChange}></input>
               
-               <label htmlFor="description" className="form-label">Description</label>
-               <input type="text" name="description" value={description} onChange={(e) => setDescription(e.target.value)}></input>
+               <label htmlFor="description" className="form-label">Description:</label>
+               <textarea rows="4" cols="40" name="description" value={formData.description} onChange={handleChange}></textarea>
                <br />
                <br />
                <Box
@@ -68,7 +66,7 @@ const Form = ({ onHandleAddActivity}) => {
                 justifyContent="center"
                 alignItems="center"
                 >
-               <Button type="submit" variant="outlined" fullWidth>Submit</Button>
+               <Button type="submit" variant="contained" fullWidth>Submit</Button>
                </Box>
            </form>           
            </Container>
@@ -77,3 +75,4 @@ const Form = ({ onHandleAddActivity}) => {
 }
 
 export default Form
+
