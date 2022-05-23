@@ -1,17 +1,24 @@
 import React from 'react'
 import FavoriteCard from './FavoriteCard'
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
 
-const FavoritesList = ({trips}) => {
+const FavoritesList = ({favorites, onHandleDeleteFav}) => {
     
-     const tripList = trips.map(trip => (
-    <FavoriteCard key={trip.id} trip={trip} />
+     const tripList = favorites.map(fav => (
+    <FavoriteCard key={fav.id} fav={fav} onHandleDeleteFav={onHandleDeleteFav} />
 ))
 
     return (
-        <ul>          
-           {tripList}
+        <ul>   
+        <CssBaseline />  
+        <Container maxWidth="xs"> 
+            <h2> My Favorites: </h2>       
+            {tripList}
+        </Container>
         </ul>
     )
 }
 
 export default FavoritesList
+
