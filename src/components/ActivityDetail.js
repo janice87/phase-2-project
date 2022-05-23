@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {useParams} from 'react-router-dom'
+import {useParams, useHistory} from 'react-router-dom'
 import Button from '@mui/material/Button';
-import {useHistory} from 'react-router-dom'
 
 const ActivityDetail = () => {
     const [activity, setActivity] = useState({})
@@ -21,8 +20,7 @@ const ActivityDetail = () => {
     const {name, image, address, island, description} = activity
 
     return (
-    <div className='activity-detail'>
-                  
+    <div className='activity-detail'>                  
             <div className="image">
             <img src={image} alt={name} />
             <h2>{name}</h2>
@@ -30,8 +28,7 @@ const ActivityDetail = () => {
             <p>{island}</p>
             <p>{description}</p>   
             <Button variant="outlined" onClick={handleHomePage}>BACK</Button>         
-            </div>
-        
+            </div>        
     </div>
     )
 }
