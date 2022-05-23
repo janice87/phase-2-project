@@ -1,10 +1,10 @@
 # Phase 2 Project - Hawaii Activity Planner
 
 ## Demo
-insert gif here
+![appDemo](demo/demo.gif)
 
 ## Overview
-This application includes a home page, an activities page which renders cards displaying details about each activity. The user can click on each card for more detail. There is also a controlled form set up allowing the user to add an activity to the list of activities. 
+This application includes a home page, an activities page which renders cards displaying details about each activity, a form page and a favorites page. The user can click on each card for more detail and add to their favorites. There is also a controlled form set up allowing the user to add an activity to the list of activities. If the user chooses, they can delete the activity. 
 
 ## Description
 Build a single page application using create-react-app. Incorporate client side routing, knowledge of props and state management. A json-server is used to create a RESTful API using GET and POST requests. The styling used for this application was with a CSS file and Material UI. The data for the db.json file is from the National Park Service API. Images are from the National Park Service API and owners of the background images are provided in the links.
