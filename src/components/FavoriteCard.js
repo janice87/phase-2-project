@@ -15,7 +15,7 @@ const {name, image, address, id} = fav
         <div className="fav-card">
             <h3>{name}</h3>
             <div className="image">          
-            <img src={image} alt={name} />
+            <img src={image} alt={name}/>
             </div>
             <p>📍{address}</p>
             <Button variant="outlined" onClick={handleRemoveFav}>REMOVE</Button>            
