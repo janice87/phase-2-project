@@ -39,7 +39,6 @@ const history = useHistory();
             <p>{island}</p>
            <Button variant="outlined" onClick={handleShowCard}>MORE</Button>
            <Button variant="outlined" onClick={handleDelete}>DELETE</Button>
-           <br />
            <Button variant="outlined" onClick={addToFav}>ADD TO FAVORITES</Button> 
            </div>
         </li>
