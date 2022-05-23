@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
-const Form = ({ onHandleAddActivity}) => {
+const Form = ({ onAddActivity}) => {
 const [formData, setFormData] = useState({
     name: "", 
     image: "",
@@ -27,7 +27,7 @@ const [formData, setFormData] = useState({
         body: JSON.stringify(formData)
     })
     .then(res => res.json())
-    .then(data =>  onHandleAddActivity(data))
+    .then(data =>  onAddActivity(data))
     history.push("/activities")
   }
 
