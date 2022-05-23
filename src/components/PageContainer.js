@@ -18,8 +18,7 @@ const handleDeleteCard = (id) => {
     const updatedActivities = activities.filter(act => act.id !== id)
     setActivities(updatedActivities)
 }    
-  
-    return (
+      return (
       <div>
         <CssBaseline />
           <Container maxWidth="xl">     

@@ -9,7 +9,6 @@ import Home from './Home'
 
 const App = () => {
   const [activities, setActivities] = useState([])
-  //const [trips, setTrips] = useState([])
   const [favorites, setFavorites] = useState([])
   
 useEffect (() => {
@@ -41,7 +40,7 @@ const handleDeleteFav = (id) => {
     <div>     
       <NavBar />      
       <Switch>
-        <Route path="/activities/new"><Form onAddActivity={handleAddActivity}/></Route>    
+        <Route path="/activities/new"><Form onAddActivity={handleAddActivity} /></Route>    
         <Route path="/activities/:id"><ActivityDetail /></Route>
         <Route path="/activities"><PageContainer activities={activities} setActivities={setActivities} onAddToFavs={addToFavorites} /></Route>   
         <Route path="/favorites"><FavoritesList favorites={favorites} onHandleDeleteFav={handleDeleteFav} /></Route>    
