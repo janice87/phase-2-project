@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Search from './Search'
 import ActivityList from './ActivityList'
 import Form from './Form'
-import MyTrip from './MyTrip'
+import FavoritesList from './FavoritesList'
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 
@@ -19,7 +19,7 @@ useEffect (() => {
       }, [])
 
 useEffect(() => {
-        fetch('http://localhost:4000/mytrip')
+        fetch('http://localhost:4000/favorites')
         .then(res => res.json())
         .then(data => setTrips(data))
     }, [])
@@ -52,7 +52,7 @@ const AddToTrip = (activityObj) => {
         <CssBaseline />
           <Container maxWidth="xl">        
             { display ? (<Form onHandleAddActivity={handleAddActivity} />) : null }
-            { display ? (<MyTrip trips={trips}/>) : null }
+            { display ? (<FavoritesList trips={trips} />) : null }
             <Search searchTerm={searchTerm} onHandleSearch={handleSearchQuery} />
             <ActivityList activities={searchedActivities} onHandleDeleteCard={handleDeleteCard} onAddToTrip={AddToTrip} />
          </Container>
