@@ -12,8 +12,7 @@ const ActivityCard = ({activity, onHandleDeleteCard, onAddToTrip}) => {
     })
      .then(res => res.json())
      .then(() => onHandleDeleteCard(id))  
-    //onHandleDeleteCard(id)  
-    }
+     }
 
     const handleShowCard = () => {
         history.push(`/activities/${id}`)
@@ -28,7 +27,8 @@ const ActivityCard = ({activity, onHandleDeleteCard, onAddToTrip}) => {
             <p>{island}</p>
            <Button variant="outlined" onClick={handleShowCard}>MORE</Button>
            <Button variant="outlined" onClick={handleDelete}>DELETE</Button> 
-           <Button variant="outlined" onClick={() => onAddToTrip(activity)}>ADD TRIP</Button> 
+           <br />
+           <Button variant="outlined" onClick={() => onAddToTrip(activity)}>ADD TO FAVORITES</Button> 
            </div>
         </li>
     )
